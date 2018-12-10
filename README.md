@@ -7,3 +7,11 @@ This is a DHT11 thermometer program that does following things:
  * In loop
    * takes temperature and humidity values using DHT11 sensor
    * sends those values to a configured MQTT topic
+
+# Builing 
+
+To build this you need a configured https://github.com/plerup/makeEspArduino file. Additionally you need to provide 
+a config file with defines required for building. The build should look more or less like this:
+```
+CONFIG_FILE=config-living-room.h make flash 
+```
